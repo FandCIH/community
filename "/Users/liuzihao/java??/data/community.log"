@@ -1,0 +1,57 @@
+2022-05-01 18:46:49.238  INFO 52622 --- [restartedMain] c.n.community.CommunityApplication       : Starting CommunityApplication on liuzihabuke4413.lan with PID 52622 (/Users/liuzihao/java/nowcoder/community/target/classes started by liuzihao in /Users/liuzihao/java/nowcoder/community)
+2022-05-01 18:46:49.239 DEBUG 52622 --- [restartedMain] c.n.community.CommunityApplication       : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2022-05-01 18:46:49.239  INFO 52622 --- [restartedMain] c.n.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2022-05-01 18:46:49.292  INFO 91608 --- [restartedMain] c.n.community.CommunityApplication       : Starting CommunityApplication on liuzihabuke4413.lan with PID 91608 (/Users/liuzihao/java/nowcoder/community/target/classes started by liuzihao in /Users/liuzihao/java/nowcoder/community)
+2022-05-01 18:46:49.293 DEBUG 91608 --- [restartedMain] c.n.community.CommunityApplication       : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2022-05-01 18:46:49.293  INFO 91608 --- [restartedMain] c.n.community.CommunityApplication       : No active profile set, falling back to default profiles: default
+2022-05-01 18:46:49.736  INFO 91608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-01 18:46:49.737  INFO 91608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-01 18:46:49.737  INFO 91608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-05-01 18:46:49.756  INFO 91608 --- [restartedMain] o.a.c.c.C.[.[localhost].[/community]     : Initializing Spring embedded WebApplicationContext
+2022-05-01 18:46:49.756  INFO 91608 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 461 ms
+2022-05-01 18:46:49.778  WARN 91608 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeController': Unsatisfied dependency expressed through field 'discussPostService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'discussPostService': Unsatisfied dependency expressed through field 'discussPostMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.nowcoder.community.dao.DiscussPostMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-05-01 18:46:49.779  INFO 91608 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-01 18:46:49.786  INFO 91608 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-01 18:46:49.880  INFO 52622 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-01 18:46:49.882  INFO 52622 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-01 18:46:49.882  INFO 52622 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-05-01 18:46:49.898  INFO 52622 --- [restartedMain] o.a.c.c.C.[.[localhost].[/community]     : Initializing Spring embedded WebApplicationContext
+2022-05-01 18:46:49.907  INFO 52622 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 662 ms
+2022-05-01 18:46:49.969 ERROR 91608 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field discussPostMapper in com.nowcoder.community.service.DiscussPostService required a bean of type 'com.nowcoder.community.dao.DiscussPostMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.nowcoder.community.dao.DiscussPostMapper' in your configuration.
+
+2022-05-01 18:46:50.288  INFO 52622 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 18:46:50.372  INFO 52622 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-01 18:46:50.488  WARN 52622 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-01 18:46:50.570  INFO 52622 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/community'
+2022-05-01 18:46:50.576  INFO 52622 --- [restartedMain] c.n.community.CommunityApplication       : Started CommunityApplication in 1.388 seconds (JVM running for 68.439)
+2022-05-01 18:46:50.581  INFO 52622 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-01 18:46:51.221  INFO 52659 --- [main] com.nowcoder.community.LoggerTest        : Starting LoggerTest on liuzihabuke4413.lan with PID 52659 (started by liuzihao in /Users/liuzihao/java/nowcoder/community)
+2022-05-01 18:46:51.222 DEBUG 52659 --- [main] com.nowcoder.community.LoggerTest        : Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2022-05-01 18:46:51.223  INFO 52659 --- [main] com.nowcoder.community.LoggerTest        : No active profile set, falling back to default profiles: default
+2022-05-01 18:46:56.473  INFO 52659 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-01 18:46:56.877  INFO 52659 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-01 18:46:57.315  INFO 52659 --- [main] com.nowcoder.community.LoggerTest        : Started LoggerTest in 6.516 seconds (JVM running for 8.127)
+2022-05-01 18:46:57.622 DEBUG 52659 --- [main] com.nowcoder.community.LoggerTest        : debuglog
+2022-05-01 18:46:57.622  INFO 52659 --- [main] com.nowcoder.community.LoggerTest        : info log
+2022-05-01 18:46:57.623  WARN 52659 --- [main] com.nowcoder.community.LoggerTest        : warn log
+2022-05-01 18:46:57.623 ERROR 52659 --- [main] com.nowcoder.community.LoggerTest        : error log
+2022-05-01 18:46:57.637  INFO 52659 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-01 18:47:23.396  INFO 52622 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
