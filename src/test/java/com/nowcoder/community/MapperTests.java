@@ -1,4 +1,4 @@
-package community;
+package com.nowcoder.community;
 
 
 import com.nowcoder.community.CommunityApplication;
